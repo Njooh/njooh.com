@@ -1,0 +1,64 @@
+<%provide(:title, 'Log In or Create your Account') %>
+
+<section>
+  <div class="landing-page">
+    <div class="ui vertical stripe segment">
+      <div class="ui middle aligned stackable grid container">
+        <div class="row">
+          <div class="nine wide column find">
+            <h3 class="ui header"><%= image_tag('find-worker.svg') %>Find a worker for your jobs on Njooh</h3>
+            <p class="">Post your project and receive bids from workers within minutes.</p>
+            <h3 class="ui header"><%= image_tag('worker.svg', :class => "find") %>Work from anywhere in the world</h3>
+            <p>See posts work and updates in News Feed.</p>
+            <h3 class="ui header"><%= image_tag('trading.svg', :class => "find") %>On Njooh sell, buy or trade all kind of articles</h3>
+            <p>Post your article and receive bids from buyers.</p>
+          </div>
+          <div class="six wide right floated column">
+            <form class="ui form segment signup-form">
+              <h2 class="ui header">Create your account</h2>
+              <p>Njooh it's free simply.</p>
+              <div class="two fields">
+                <div class="field">
+                  <input placeholder="First Name" name="first_name" type="text">
+                </div>
+                <div class="field">
+                  <input placeholder="Last Name" name="last_name" type="text">
+                </div>
+              </div>
+              <div class="field">
+                <input placeholder="Email" name="email" type="email">
+              </div>
+              <div class="field">
+                <input placeholder="Username" name="username" type="text">
+              </div>
+              <div class="field">
+                <input placeholder="Create a password" type="password" name="password">
+              </div>
+
+              <div class="role fields">
+                <label>I want to :</label>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" name="role">
+                    <label>Hire</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" name="role">
+                    <label>Work</label>
+                  </div>
+                </div>
+              </div>
+              <p class="privacy-policy">
+                By clicking Sign Up, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Policy</a>, including our
+                <a href="#">Cookie Use</a>.
+              </p>
+              <div class="fluid ui green submit button">Sign Up</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails njooh.com: test" uuid="6b444084-15fb-4264-92ac-80722030170e">
+      <database-info product="PostgreSQL" version="9.6.1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <resolve-scope>njooh_com_test:public</resolve-scope>
+    </data-source>
+    <data-source name="Rails njooh.com: development" uuid="72f3c75a-f9e0-4cd0-b979-bf72245a80f5">
+      <database-info product="PostgreSQL" version="9.6.1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <resolve-scope>njooh_com_development:public</resolve-scope>
+    </data-source>
+    <data-source name="Rails njooh.com: production" uuid="06eb2d66-9b97-4ae7-ba18-693ce24e2e0d">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>admin</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe4dfe0dfe5dfe5dfe2dff5dfe9dfe5dfe7dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+  </component>
+</project>

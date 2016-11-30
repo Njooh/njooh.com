@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Njooh - <%= content_for?(:title) ? yield(:title) : "Njooh" %></title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%if yield(:title) == 'Log In or Create your Account' %>
+      <%= render "layouts/shared/header" %>
+    <%else%>
+      <%= render "home/shared/header" %>
+    <%end%>
+    <!-- Page Contents -->
+    <div class="pusher">
+      <%= yield %>
+      <!-- Footer Contents -->
+      <%= render "layouts/shared/footer" %>
+    </div>
+
+  </body>
+</html>

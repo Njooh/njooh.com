@@ -1,0 +1,233 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require semantic_ui/semantic_ui
+ */
+
+/*
+
+_fonts
+
+*/
+@import "fonts";
+$njooh_regular_font: 'NjoohDisplay-Regular';
+$njooh_ultralight_font: 'NjoohDisplay-Ultralight';
+$njooh_thin_font: 'NjoohDisplay-Thin';
+$njooh_medium_font: 'NjoohDisplay-Medium';
+
+/*
+*
+* Common Style
+* Colors : #2185d0; rgba(19, 120, 197, 0.99)
+*/
+
+* {
+  font-family: $njooh_regular_font, 'Helvetica', 'Arial', sans-serif !important;
+}
+
+// Content
+.ui.vertical.stripe {
+  padding: 8em 0em;
+}
+
+.ui.vertical.stripe h3 {
+  font-size: 2em;
+}
+
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+  margin-top: 3em;
+}
+
+.ui.vertical.stripe .floated.image {
+  clear: both;
+}
+
+.ui.vertical.stripe p {
+  font-size: 1.33em;
+}
+
+.quote.stripe.segment {
+  padding: 0em;
+}
+
+.quote.stripe.segment .grid .column {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.footer.segment {
+  position: absolute;
+  bottom: 0em;
+  padding: 5em 0em;
+}
+
+.secondary.pointing.menu .toc.item {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .ui.fixed.menu {
+    display: none !important;
+  }
+}
+
+/*-------Njooh Style--------*/
+//-----Menu----->
+.ui.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0em;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  background: #fcfcfc !important;
+  font-weight: normal;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.28571429rem;
+  min-height: 2.85714286em;
+}
+@media only screen and (min-width: 768px) {
+  .ui.menu:not(.secondary):not(.text):not(.tabular):not(.borderless) > .container > .item:not(.right):not(.borderless):first-child {
+    border-left: none !important;
+  }
+}
+
+.ui.menu .item:before {
+  position: absolute;
+  content: none !important;
+  top: 0%;
+  right: 0px;
+  height: 100%;
+  width: 1px;
+  background: none;
+}
+.ui.menu .item {
+  padding: 0.92857143em 0em !important;
+}
+a.item {
+  font-size: 1.2em;
+}
+.ui.link.menu .item:hover, .ui.menu .dropdown.item:hover, .ui.menu .link.item:hover, .ui.menu a.item:hover {
+  cursor: pointer;
+  background: none !important;
+  color: rgba(19, 120, 197, 0.6) !important;
+}
+//Logo Njooh
+.ui.menu .item > img:not(.ui) {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -0.3em 0em;
+  width: 5.5em !important;
+}
+
+// Content
+.landing-page{
+  background-color: #f7f8fa !important;
+}
+
+// Form
+.ui.form input[placeholder]{
+  font-size: 1.1em !important;
+}
+.signup-form h2{
+  font-size: 2.2em !important;
+}
+.ui.form.signup-form > h2 {
+  margin: 0em 0em 0em 0em !important;
+}
+.ui.form.signup-form > p {
+  margin: 0em 0em 1em 0em !important;
+  font-size: 1.2em;
+}
+.role .field label{
+  font-size: 1.2em !important;
+  font-family: $njooh_medium_font, 'Helvetica', 'Arial', sans-serif !important;
+  color: rgba(55, 55, 55, 0.99) !important;
+}
+.role.fields label:first-child{
+  padding-left: 0.5em;
+  font-weight: normal !important;
+  font-size: 1.2em !important;
+  font-family: $njooh_regular_font, 'Helvetica', 'Arial', sans-serif !important;
+  color: rgba(55, 55, 55, 0.99) !important;
+}
+p.privacy-policy{
+  padding:  1.3em 0 1.3em 0;
+  font-size: 0.9em !important;
+  font-family: $njooh_regular_font, 'Helvetica', 'Arial', sans-serif !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+h2.ui.header, h3.ui.header{
+  color: rgba(55, 55, 55, 1.0) !important;
+}
+p.privacy-policy a:hover{
+  text-decoration: underline;
+}
+.find p{
+  position: relative;
+  top: -2.2em;
+  left: 5.3em;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.1em !important;
+  font-family: $njooh_medium_font, 'Helvetica', 'Arial', sans-serif !important;
+}
+.ui.header {
+  border: none;
+  margin: calc(1rem - 0.14285em ) 0em 1rem !important;
+  padding: 0em 0em;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1.2857em;
+  text-transform: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+//Footer
+.ui.vertical.footer.segment {
+  position: relative;
+  bottom: 0em;
+  margin: 0em 0em 0em 0em !important;
+  padding: 0.5em 0em 0em 0em !important;
+  background: none transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  border: none;
+  border-top: 1px solid rgba(34, 36, 38, 0.15);
+}
+.ui.list .list > a.item:hover, .ui.list > a.item:hover {
+  text-decoration: underline;
+}
+.ui.list .list > .disabled.item, .ui.list > .disabled.item.copyright {
+  pointer-events: none;
+  color: rgba(40, 40, 40, 0.6) !important;
+}
+.ui.list .list > .disabled.item, .ui.list > .disabled.item.language {
+  pointer-events: none;
+  color: rgba(40, 40, 40, 0.6) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
